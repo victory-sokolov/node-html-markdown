@@ -194,6 +194,12 @@ export class Visitor {
           preserveWhitespace: true
         }
         break;
+      case 'CODE':
+        metadata = {
+          ...metadata,
+          preserveWhitespace: true,
+        };
+        break;
       case 'TABLE':
         metadata = {
           ...metadata,
